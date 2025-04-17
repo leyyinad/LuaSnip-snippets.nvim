@@ -40,9 +40,6 @@ function insert_snippets_into_table(t, modules_str, paths_table)
 end
 
 function M.load_snippets()
-
-    print("load luasnip_snippets")
-
     local t = {}
 
     local nvim_snippets = vim.api.nvim_get_runtime_file( nvim_snippets_path .. "*.lua", true)
